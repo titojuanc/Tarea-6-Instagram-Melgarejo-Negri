@@ -1,0 +1,253 @@
+:root{
+    --colorGris: rgb(136, 133, 133);
+    --colorCeleste: rgb(0,149,246);
+    --ColorGrisClaro: #EBEDF0;
+    --ColorGrisClaro2: #c0c3c7;
+}
+header{
+    width: 100hv;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--ColorGrisClaro);
+}
+.flecha{
+    margin-left: 3px;
+    padding-left: 5px;
+    position: absolute;
+    width: 20px;
+    height: 28px;
+}
+body{
+    height: 100%;
+}
+main{
+    height: 100vh;
+    
+}
+#header_div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN */
+
+#div_perfil{
+    display: flex;
+
+}
+
+#img_perfil{
+    display: inline;
+    margin-top: 5px;
+    height: 2.5cm;
+    width: 2.5cm;
+}
+
+#img_tres_puntitos{
+    display: flex;
+    width: 0.5cm;
+    height: 0.5cm;
+    transform: rotate(90deg);
+    transform-origin: center;
+    margin-top: 0.58cm;
+}
+.div_main_usuario{
+    display:block;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#div_siguiendo_cel, .nombre_usuario, .div_data_pc_2{
+    display: flex;
+    gap: 5px;
+}
+
+#div_siguiendo_pc{
+    display: flex;
+}
+.boton_perfil{
+    background-color: var(--ColorGrisClaro);
+    border: none;
+    border-radius: 20%;
+}
+#img_sugeridos{
+    width: 20px;
+}
+#img_link{
+    width: 10px;
+    margin-top: 3px;
+    padding-top: 3px;
+}
+.nombre_negrita{
+    font-weight: bold;
+    margin-bottom: 0%;
+    padding-bottom: 0px;
+}
+.descripcion{
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.div_historia{
+    display: flex;
+    padding: 25px 0px 25px 0px;
+    gap: 4px;
+}
+.historia_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.historia{
+    width: 55px;
+    height: 55px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distonrsionar */
+    border-radius: 100%; /* Borde redondeado */
+    padding: 2px;
+    border: 1px solid var(--ColorGrisClaro2);
+}
+.div_data{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--ColorGrisClaro2);
+    border-bottom: 1px solid var(--ColorGrisClaro2);
+    padding-bottom: 10px;
+    gap: 7%;
+}
+.fuente_gris{
+    color: var(--colorGris);
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+.div_data_2{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px none var(--ColorGrisClaro2);
+    gap: 30%;
+    align-items: center;
+    padding: 7px 7px 25px 7px;
+}
+.div_publicaciones{
+    display: flex;
+    flex-wrap: wrap;
+    GAP: 1%;
+    justify-content: center;
+}
+
+.div_publicaciones img{
+    
+    width: 30%;
+    height: 30%;
+}
+
+#img_pub{
+    border-bottom: 2px solid black;
+    width: 20px;
+}
+.div_texto_pc{
+    display: none;
+}
+.div_data_pc{
+    display: none;
+}
+#img_pub_n{
+    width: 20px;
+}
+
+@media (min-width: 735px){
+
+    .div_main_usuario{
+        margin-left: 2cm;
+    }
+    #img_perfil{
+        display: inline;
+        margin-top: 5px;
+        height: 5cm;
+        width: 5cm;
+        margin-left: 1cm;
+    }
+    .descripcion{
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+    .div_texto_pc{
+        display: block;
+    }
+    .div_texto_cel{
+        display: none;
+    }
+    .div_historia{
+        display: flex;
+        padding: 40px 0px 40pxpx 0px;
+        gap: 1cm;
+        margin-left: 1cm;
+        
+    }
+    .historia{
+        width: 80px;
+        height: 80px;
+        object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distonrsionar */
+        border-radius: 100%; /* Borde redondeado */
+        padding: 2px;
+        border: 1px solid var(--ColorGrisClaro2);
+    }
+    .instagram{
+        margin-left: 20px;
+        padding-left: 5px;
+        position: absolute;
+        width: 2.7cm;
+        height: 1.7cm;
+    }
+    .flecha{
+        display: none;
+    }
+    #img_tres_puntitos{
+        display: none;
+    }
+    #img_sugeridos{
+        display: none;
+    }
+    #div_siguiendo_cel{
+        display: none;
+    }
+    .boton_perfil{
+        background-color: var(--ColorGrisClaro);
+        border: none;
+        border-radius: 20%;
+        gap: 4px;
+        margin-top: 21px;
+        margin-left: 10PX;
+        height: 10px;
+    }
+    .div_data_pc, .div_data_pc p{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        gap: 15px;
+    }
+    body{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .div_data{
+        display: none;
+    }
+    .div_data_2{
+        border-top: 1px solid var(--ColorGrisClaro2);
+
+    }
+}
+@media (max-width: 734px){
+    .instagram{
+        display: none;
+    }
+    #div_siguiendo_pc{
+        display: none;
+    }
+}
